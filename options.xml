@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/options.xsd">
+    <import>
+		<categories>
+			<!-- message.general -->
+			<category name="message.contact.general">
+				<parent>message.general</parent>
+			</category>
+			<!-- /message.general -->
+		</categories>
+		
+		<options>
+			<!-- module.content -->
+			<option name="module_contact">
+				<categoryname>module.content</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue><![CDATA[1]]></defaultvalue>
+			</option>
+			<!-- /module.content -->
+			
+			<!-- message.contact.general -->
+			<option name="message_contact_admin_id">
+				<categoryname>message.contact.general</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue><![CDATA[1]]></defaultvalue>
+				<options>module_contact</options>
+			</option>
+			<!-- /message.contact.general -->
+		</options>
+	</import>
+</data>
