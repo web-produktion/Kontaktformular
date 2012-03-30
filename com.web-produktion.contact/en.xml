@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/language.xsd" languagecode="en">
+	
+	<!-- wcf.contact -->
+	<category name="wcf.contact">
+		<item name="wcf.contact.daten"><![CDATA[User Data]]></item>
+		<item name="wcf.contact.username"><![CDATA[Name]]></item>
+		<item name="wcf.contact.title"><![CDATA[Contact]]></item>
+		<item name="wcf.contact.description"><![CDATA[]]></item>
+		<item name="wcf.contact.mail.subject"><![CDATA[Message from "{$username}": {$subject}]]></item>
+		<item name="wcf.contact.mail.message"><![CDATA[Hello {$recipient},
+
+on the website: {PAGE_TITLE} ({PAGE_URL}) has sent this message:
+
+Name: {$name}
+E-Mail: {$email}
+
+Betreff: {$subject}
+Nachricht:
+{$Message}]]></item>
+		<item name="wcf.contact.mailvers"><![CDATA[Your message to our &raquo;Team - {$username}&laquo; was successfully.]]></item>
+	</category>
+	
+	<!-- wcf.header.menu -->
+	<category name="wcf.header.menu">
+		<item name="wcf.header.menu.contact"><![CDATA[Contact]]></item>
+	</category>
+	
+	<!-- wcf.usersOnline -->
+	<category name="wcf.usersOnline">
+		<item name="wcf.usersOnline.location.contact"><![CDATA[<a href="index.php?form=Contact{SID_ARG_2ND}">Contact</a>]]></item>
+	</category>
+	
+	<!-- wcf.acp.option -->
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.module_contact"><![CDATA[Contact]]></item>
+		<item name="wcf.acp.option.module_contact.description"><![CDATA[Enables the Contact form.]]></item>
+		<item name="wcf.acp.option.category.message.contact.general"><![CDATA[Contact]]></item>
+		<item name="wcf.acp.option.category.message.contact.general.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.message_contact_admin_id"><![CDATA[Receiver-ID]]></item>
+		<item name="wcf.acp.option.message_contact_admin_id.description"><![CDATA[Enter here the User-ID of the recipient of the e-mails.]]></item>
+	</category>
+</language>
